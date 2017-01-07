@@ -74,5 +74,9 @@ namespace Nhom6.Controllers
             }
             return View(tv.ToPagedList(SoTrang, SoSP));
         }
+        public ActionResult ShowRoom()
+        {
+            return View();
+        }
     }
 }
