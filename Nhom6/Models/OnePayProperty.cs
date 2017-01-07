@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace webfinal.Models
+namespace Nhom6.Models
 {
     public class OnePayProperty
     {

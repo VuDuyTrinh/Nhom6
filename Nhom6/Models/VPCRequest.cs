@@ -15,7 +15,7 @@ using System.Security.Cryptography;
 using System.Net;
 using System.IO;
 
-namespace webfinal.Models
+namespace Nhom6.Models
 {
     public class VPCRequest
     {
