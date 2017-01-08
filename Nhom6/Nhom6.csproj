@@ -292,6 +292,14 @@
     <Content Include="Views\Shared\LayOutUser.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
     <Content Include="Views\TrangChu\Hang.cshtml" />
+<<<<<<< HEAD
+=======
+    <Content Include="Views\TrangChu\ChoNam.cshtml" />
+    <Content Include="Views\TrangChu\ChoNu.cshtml" />
+    <Content Include="Views\TrangChu\SpHang.cshtml" />
+    <Content Include="Views\TrangChu\chitiet.cshtml" />
+    <Content Include="Views\TrangChu\LienHe.cshtml" />
+>>>>>>> CamNhung_Rose
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
