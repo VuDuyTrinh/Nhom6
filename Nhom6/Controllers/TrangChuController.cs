@@ -92,5 +92,13 @@ namespace Nhom6.Controllers
             var hang = (from a in data.HangNHs select a).Take(12); //Lấy 12 Hãng
             return PartialView(hang);
         }
+        public ActionResult ChoNam(int? pape)
+        {
+            var t = from a in data.SanPhams where (a.MaLoai == 2) select a;
+            int SoSP = 9;
+            int SoTrang = (pape ?? 1);
+            return View(t.ToPagedList(SoTrang, SoSP));
+
+        }
     }
 }
