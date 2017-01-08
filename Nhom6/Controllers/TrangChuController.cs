@@ -32,5 +32,11 @@ namespace Nhom6.Controllers
             return PartialView(hang);
         }
 
+
+        public ActionResult SpHot(int i) // i là số sản phẩm sẽ bỏ qua để lấy các sản phẩm khác nhau trong carousel slide
+        {
+            var sp = (from a in data.SanPhams select a).Skip(i).Take(4); //Lấy 4 sản phẩm để hiển thị trong carousel slide
+            return PartialView(sp); //Đây là PartialView của LayoutUser
+        }
     }
 }

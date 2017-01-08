@@ -292,6 +292,7 @@
     <Content Include="Views\Shared\LayOutUser.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
     <Content Include="Views\TrangChu\Hang.cshtml" />
+    <Content Include="Views\TrangChu\SpHot.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
