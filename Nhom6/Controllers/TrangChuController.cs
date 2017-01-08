@@ -116,5 +116,11 @@ namespace Nhom6.Controllers
             ViewBag.Hang = b.TenHang;
             return View(sp.ToPagedList(SoTrang, SoSP));
         }
+        public ActionResult chitiet(int id)
+        {
+            var ct = (from t in data.SanPhams where (t.MaNH == id) select t);
+            return View(ct.SingleOrDefault());
+        }
+
     }
 }
