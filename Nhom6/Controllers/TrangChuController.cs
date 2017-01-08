@@ -118,7 +118,7 @@ namespace Nhom6.Controllers
         }
         public ActionResult chitiet(int id)
         {
-            var ct = (from t in data.SanPhams where (t.MaNH == id) select t);
+            var ct = (from t in data.SanPhams where (t.MaNH == id) select t);//lấy id sản phẩm mới chọn để hiện chi tiết sp đó
             return View(ct.SingleOrDefault());
         }
 
