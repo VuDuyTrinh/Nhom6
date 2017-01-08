@@ -166,3 +166,6 @@ C:\Users\NGUYENHUYNH\Desktop\Nhom6\Nhom6\bin\Microsoft.Owin.Security.MicrosoftAc
 C:\Users\NGUYENHUYNH\Desktop\Nhom6\Nhom6\obj\Debug\Nhom6.csprojResolveAssemblyReference.cache
 C:\Users\NGUYENHUYNH\Desktop\Nhom6\Nhom6\obj\Debug\Nhom6.dll
 C:\Users\NGUYENHUYNH\Desktop\Nhom6\Nhom6\obj\Debug\Nhom6.pdb
+C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.dll
+C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.pdb

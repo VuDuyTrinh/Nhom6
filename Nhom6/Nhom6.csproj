@@ -215,9 +215,13 @@
     <Compile Include="Models\giohang.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+<<<<<<< HEAD
     <Compile Include="Models\OnePayProperty.cs" />
     <Compile Include="Models\QLNH.designer.cs" />
     <Compile Include="Models\QLNH1.designer.cs">
+=======
+    <Compile Include="Models\QLNH.designer.cs">
+>>>>>>> 4d47164201118f44494c372da3008bc11cbf716c
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNH.dbml</DependentUpon>
@@ -242,7 +246,7 @@
     </Content>
     <Content Include="Models\QLNH.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>QLNH1.designer.cs</LastGenOutput>
+      <LastGenOutput>QLNH.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -296,6 +300,14 @@
     <Content Include="Views\Shared\LayOutUser.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
     <Content Include="Views\TrangChu\Hang.cshtml" />
+<<<<<<< HEAD
+=======
+    <Content Include="Views\TrangChu\ChoNam.cshtml" />
+    <Content Include="Views\TrangChu\ChoNu.cshtml" />
+    <Content Include="Views\TrangChu\SpHang.cshtml" />
+    <Content Include="Views\TrangChu\chitiet.cshtml" />
+    <Content Include="Views\TrangChu\LienHe.cshtml" />
+>>>>>>> CamNhung_Rose
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
@@ -315,12 +327,12 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Models\QLNH.dbml.layout">
       <DependentUpon>QLNH.dbml</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
