@@ -296,6 +296,7 @@
     <Content Include="Views\TrangChu\ChoNu.cshtml" />
     <Content Include="Views\TrangChu\SpHang.cshtml" />
     <Content Include="Views\TrangChu\chitiet.cshtml" />
+    <Content Include="Views\TrangChu\LienHe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
