@@ -162,5 +162,29 @@ namespace Nhom6.Controllers
             data.SubmitChanges();
             return RedirectToAction("ChiTietDDH", "DDH", new { id = dh.MADDH });
         }
+        public ActionResult Huy(int id)
+        {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Admin");
+            }
+            var dh = data.DonDatHangs.SingleOrDefault(n => n.MADDH == id);
+            var ct = from a in data.CTDDHs where (a.MADDH == id) select a;
+            try
+            {
+                foreach (var i in ct)
+                {
+                    data.CTDDHs.DeleteOnSubmit(i);
+                    data.SubmitChanges();
+                }
+                data.DonDatHangs.DeleteOnSubmit(dh);
+                data.SubmitChanges();
+                return RedirectToAction("DsCheck", "DDH");
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("DsCheck", "DDH");
+            }
+        }
     }
 }
