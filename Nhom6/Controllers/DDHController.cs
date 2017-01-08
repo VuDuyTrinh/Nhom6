@@ -138,5 +138,17 @@ namespace Nhom6.Controllers
             }
             return PartialView(sp);
         }
+        public ActionResult ThanhToan(int id)
+        {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Admin");
+            }
+            var dh = data.DonDatHangs.SingleOrDefault(n => n.MADDH == id);
+            dh.DaThanhToan = true;
+            UpdateModel(dh);
+            data.SubmitChanges();
+            return RedirectToAction("ChiTietDDH", "DDH", new { id = dh.MADDH });
+        }
     }
 }
