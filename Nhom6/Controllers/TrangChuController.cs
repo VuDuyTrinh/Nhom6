@@ -100,5 +100,12 @@ namespace Nhom6.Controllers
             return View(t.ToPagedList(SoTrang, SoSP));
 
         }
+        public ActionResult ChoNu(int? pape)
+        {
+            var t = from a in data.SanPhams where (a.MaLoai == 2) select a;
+            int SoSP = 9;
+            int SoTrang = (pape ?? 1);
+            return View(t.ToPagedList(SoTrang, SoSP));
+        }
     }
 }
