@@ -92,12 +92,12 @@ namespace Nhom6.Controllers
             var hang = (from a in data.HangNHs select a).Take(12); //Lấy 12 Hãng
             return PartialView(hang);
         }
-        public ActionResult ChoNam(int? pape)
+        public ActionResult ChoNam(int? pape)//trang cho nam            
         {
-            var t = from a in data.SanPhams where (a.MaLoai == 1) select a;
-            int SoSP = 9;
+            var t = from a in data.SanPhams where (a.MaLoai == 1) select a;//truy vấn sql
+            int SoSP = 9;//so sp trong 1 trang là 9
             int SoTrang = (pape ?? 1);
-            return View(t.ToPagedList(SoTrang, SoSP));
+            return View(t.ToPagedList(SoTrang, SoSP));//trả về sp &trang
 
         }
         public ActionResult ChoNu(int? pape)
