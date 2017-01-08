@@ -293,6 +293,7 @@
     <Content Include="Views\TrangChu\Index.cshtml" />
     <Content Include="Views\TrangChu\Hang.cshtml" />
     <Content Include="Views\TrangChu\ChoNam.cshtml" />
+    <Content Include="Views\TrangChu\ChoNu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
