@@ -24,6 +24,7 @@
             </li>
         }
     </ul>
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
     <div class="menutrang">
         @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
     </div>
