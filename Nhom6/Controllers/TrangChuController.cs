@@ -107,5 +107,13 @@ namespace Nhom6.Controllers
             int SoTrang = (pape ?? 1);
             return View(t.ToPagedList(SoTrang, SoSP));
         }
+        public ActionResult SpHang(int id)
+        {
+            int SoSP = 9;
+            var sp = from a in data.SanPhams where (a.MaHang == id) select a;
+            var b = data.HangNHs.SingleOrDefault(n => n.MaHang == id);
+            ViewBag.Hang = b.TenHang;
+            return View(SoSP);
+        }
     }
 }
