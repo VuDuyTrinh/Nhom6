@@ -32,24 +32,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/themes/images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="~/themes/images/ico/apple-touch-icon-57-precomposed.png">
     <style type="text/css" id="enject"></style>
-    @using webfinal.Models
 </head>
 <body>
     <div id="header">
         <div class="container">
             <div id="welcomeLine" class="row">
-                @{
-                    KhachHang kh = (KhachHang)Session["TaiKhoan"];
-                }
-                @if (Session["TaiKhoan"] == null)
-                {
-                    <div class="span6">Xin chào</div>
-                    <a style="color:red">@ViewData["loi"]</a>
-                }
-                else
-                {
-                    <div class="span6">Xin chào: @kh.TenKH</div>
-                }
                 <div class="span6">
                     <div class="pull-right">
                         <a href="@Url.Action("Giohang","GioHang")"><span class="btn btn-mini btn-primary"><i class="icon-shopping-cart icon-white"></i>Giỏ Hàng @Session["SoLuong"]</span> </a>
