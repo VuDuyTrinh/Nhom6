@@ -286,6 +286,7 @@
     <Content Include="Views\Shared\LayOutUser.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
     <Content Include="Views\DDH\Index.cshtml" />
+    <Content Include="Views\DDH\DsCheck.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
