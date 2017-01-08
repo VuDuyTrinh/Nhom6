@@ -123,5 +123,20 @@ namespace Nhom6.Controllers
             ddh dondathang = new ddh(id);
             return View(dondathang);
         }
+        public ActionResult DsSanPham(int id)
+        {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Admin");
+            }
+            var ds = from a in data.CTDDHs where (a.MADDH == id) select a;
+            List<dssp> sp = new List<dssp>();
+            foreach (var i in ds)
+            {
+                dssp a = new dssp(i.MADDH, i.MANH);
+                sp.Add(a);
+            }
+            return PartialView(sp);
+        }
     }
 }
