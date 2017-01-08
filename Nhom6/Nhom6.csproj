@@ -288,6 +288,7 @@
     <Content Include="Views\DDH\Index.cshtml" />
     <Content Include="Views\DDH\DsCheck.cshtml" />
     <Content Include="Views\DDH\ChiTietDDH.cshtml" />
+    <Content Include="Views\DDH\Check.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />

@@ -99,5 +99,29 @@ namespace Nhom6.Controllers
             ddh dondathang = new ddh(id);
             return View(dondathang);
         }
+        public ActionResult Check(int id)
+        {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Admin");
+            }
+            int co = 0;
+            String tencn = "";
+            List<CnAd> cn = Session["CN"] as List<CnAd>;
+            foreach (CnAd i in cn)
+            {
+                if (i.iAction == "DDH" && i.iController == "DDH")
+                {
+                    tencn = i.iTenCN;
+                    co = 1;
+                }
+            }
+            if (co == 0)
+            {
+                return RedirectToAction("Loi", "Admin");
+            }
+            ddh dondathang = new ddh(id);
+            return View(dondathang);
+        }
     }
 }
