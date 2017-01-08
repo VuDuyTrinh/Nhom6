@@ -291,6 +291,7 @@
     <Content Include="Views\Shared\LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\LayOutUser.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\TrangChu\Hang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />

@@ -26,5 +26,11 @@ namespace Nhom6.Controllers
             return View(nh.ToPagedList(SoTrang, SoSP)); //Trả về Model chứa table SanPham, chứa hàm phân trang có trong PagedList
         }
 
+        public ActionResult Hang()
+        {
+            var hang = (from a in data.HangNHs select a).Take(12); //Lấy 12 Hãng
+            return PartialView(hang);
+        }
+
     }
 }
