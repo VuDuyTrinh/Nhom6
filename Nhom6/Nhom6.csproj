@@ -212,14 +212,18 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\giohang.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OnePayProperty.cs" />
     <Compile Include="Models\QLNH.designer.cs" />
     <Compile Include="Models\QLNH1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNH.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\tuvan.cs" />
+    <Compile Include="Models\VPCRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
