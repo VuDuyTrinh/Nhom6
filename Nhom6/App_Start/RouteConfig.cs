@@ -12,12 +12,12 @@ namespace Nhom6
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+                            name: "Default",
+                            url: "{controller}/{action}/{id}",
+                            //Cấu hình trang chủ cho web bằng controller và action trong Folder Controllers
+                            defaults: new { controller = "TrangChu", action = "Index", id = UrlParameter.Optional }
+                        );
         }
     }
 }
