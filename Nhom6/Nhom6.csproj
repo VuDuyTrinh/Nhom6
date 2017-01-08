@@ -214,8 +214,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\QLNH.designer.cs" />
-    <Compile Include="Models\QLNH1.designer.cs">
+    <Compile Include="Models\QLNH.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNH.dbml</DependentUpon>
@@ -238,7 +237,7 @@
     </Content>
     <Content Include="Models\QLNH.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>QLNH1.designer.cs</LastGenOutput>
+      <LastGenOutput>QLNH.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -319,12 +318,12 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Models\QLNH.dbml.layout">
       <DependentUpon>QLNH.dbml</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
