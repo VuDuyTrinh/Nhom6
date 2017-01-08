@@ -17,7 +17,7 @@ namespace Nhom6.Controllers
         {
             return data.SanPhams.ToList(); // hàm trả về list table SanPham
         }
-        public ActionResult LienHe()
+        public ActionResult Lienhe()
         {
             return View();
         }
