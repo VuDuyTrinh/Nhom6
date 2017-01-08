@@ -150,5 +150,17 @@ namespace Nhom6.Controllers
             data.SubmitChanges();
             return RedirectToAction("ChiTietDDH", "DDH", new { id = dh.MADDH });
         }
+        public ActionResult GiaoHang(int id)
+        {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Admin");
+            }
+            var dh = data.DonDatHangs.SingleOrDefault(n => n.MADDH == id);
+            dh.TinhTrangGiaoHang = true;
+            UpdateModel(dh);
+            data.SubmitChanges();
+            return RedirectToAction("ChiTietDDH", "DDH", new { id = dh.MADDH });
+        }
     }
 }
