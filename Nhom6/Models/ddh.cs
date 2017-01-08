@@ -15,7 +15,7 @@ namespace Nhom6.Models
         public string iNgayDat { set; get; }
         public string iNgayGiao { set; get; }
         public string iGiaoHang { set; get; }
-        public KhachHang ikhachhang { set; get; }
+        public KhachHang ikhachhang { set; get; 
         //phương thức khởi tạo lấy đơn đặt hàng theo id
         public ddh(int id)
         {
