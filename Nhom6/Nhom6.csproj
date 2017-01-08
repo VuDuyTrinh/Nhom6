@@ -294,6 +294,7 @@
     <Content Include="Views\TrangChu\Hang.cshtml" />
     <Content Include="Views\TrangChu\ChoNam.cshtml" />
     <Content Include="Views\TrangChu\ChoNu.cshtml" />
+    <Content Include="Views\TrangChu\SpHang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
