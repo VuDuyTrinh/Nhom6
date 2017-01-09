@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Them";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<h2>Them</h2>
+<a style="color:red">@ViewBag.Loi</a>
+@using (Html.BeginForm("Them", "Slider", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+{
+    <form>
+        <div class="group">
+            <hr class="soft" style="margin-bottom : 5px;" />
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"><p>Mã hình slider:</p></div>
+            <div class="col-md-4"><input type="text" name="Mahinh" style="width:300px;" /></div>
+        </div>
+        <br />
+        <div class="group 2">
+            <hr class="soft" style="margin-bottom : 5px;" />
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"><p>Link hình:</p></div>
+            <input id="Hinh" type="file" name="fileUpload" />
+        </div>
+        <div class="container">
+            <div class="col-md-2"> </div>
+            <div class="col-md-2"> </div>
+            <div class="col-md-6"><input class="btn btn-large btn-success" type="submit" value="Thêm" style="margin-top:10px; float: right; width: 150px; " />
+            </div>
+        </div>
+    </form>
+}
+
