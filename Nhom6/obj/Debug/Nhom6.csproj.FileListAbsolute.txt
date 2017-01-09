@@ -83,3 +83,4 @@ c:\users\duy trinh\documents\visual studio 2015\Projects\Nhom6\Nhom6\obj\Debug\N
 C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.dll
 C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.pdb
+C:\Users\NGUYENHUYNH\Desktop\Nhom6\Nhom6\obj\Debug\Nhom6.csprojResolveAssemblyReference.cache

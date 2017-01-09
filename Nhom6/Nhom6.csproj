@@ -212,13 +212,21 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\giohang.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OnePayProperty.cs" />
     <Compile Include="Models\QLNH.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNH.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\tk.cs" />
+    <Compile Include="Models\tuvan.cs" />
+    <Compile Include="Models\VPCRequest.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -230,11 +238,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="obj\Debug\Nhom6.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\Models.QLNH.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.QLNH1.designer.cs.dll" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Nhom6\admin\assets\jquery-file-upload\.DS_Store" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="Models\QLNH.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>QLNH.designer.cs</LastGenOutput>
@@ -297,6 +310,16 @@
     <Content Include="Views\TrangChu\SpHang.cshtml" />
     <Content Include="Views\TrangChu\chitiet.cshtml" />
     <Content Include="Views\TrangChu\LienHe.cshtml" />
+    <Content Include="Views\GioHang\DatHang.cshtml" />
+    <Content Include="Views\GioHang\Giohang.cshtml" />
+    <Content Include="Views\GioHang\OnepayResponse.cshtml" />
+    <Content Include="Views\GioHang\XacNhan.cshtml" />
+    <Content Include="Views\KhachHang\Index.cshtml" />
+    <Content Include="Views\TrangChu\dangky.cshtml" />
+    <Content Include="Views\TrangChu\ShowRoom.cshtml" />
+    <Content Include="Views\TrangChu\TimKiem.cshtml" />
+    <Content Include="Views\TrangChu\TuVan.cshtml" />
+    <Content Include="Views\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
