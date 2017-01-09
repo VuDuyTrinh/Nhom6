@@ -9,7 +9,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 namespace Nhom6.Models
+=======
+namespace webfinal.Models
+>>>>>>> le_chinh
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -33,6 +37,7 @@ namespace Nhom6.Models
     partial void InsertAdmin(Admin instance);
     partial void UpdateAdmin(Admin instance);
     partial void DeleteAdmin(Admin instance);
+<<<<<<< HEAD
     partial void InsertCauHoi(CauHoi instance);
     partial void UpdateCauHoi(CauHoi instance);
     partial void DeleteCauHoi(CauHoi instance);
@@ -45,6 +50,17 @@ namespace Nhom6.Models
     partial void InsertCTCN(CTCN instance);
     partial void UpdateCTCN(CTCN instance);
     partial void DeleteCTCN(CTCN instance);
+=======
+    partial void InsertChucNang(ChucNang instance);
+    partial void UpdateChucNang(ChucNang instance);
+    partial void DeleteChucNang(ChucNang instance);
+    partial void InsertCTCN(CTCN instance);
+    partial void UpdateCTCN(CTCN instance);
+    partial void DeleteCTCN(CTCN instance);
+    partial void InsertCTDDH(CTDDH instance);
+    partial void UpdateCTDDH(CTDDH instance);
+    partial void DeleteCTDDH(CTDDH instance);
+>>>>>>> le_chinh
     partial void InsertCTPN(CTPN instance);
     partial void UpdateCTPN(CTPN instance);
     partial void DeleteCTPN(CTPN instance);
@@ -54,9 +70,12 @@ namespace Nhom6.Models
     partial void InsertKhachHang(KhachHang instance);
     partial void UpdateKhachHang(KhachHang instance);
     partial void DeleteKhachHang(KhachHang instance);
+<<<<<<< HEAD
     partial void InsertHangNH(HangNH instance);
     partial void UpdateHangNH(HangNH instance);
     partial void DeleteHangNH(HangNH instance);
+=======
+>>>>>>> le_chinh
     partial void InsertLoaiNH(LoaiNH instance);
     partial void UpdateLoaiNH(LoaiNH instance);
     partial void DeleteLoaiNH(LoaiNH instance);
@@ -66,6 +85,7 @@ namespace Nhom6.Models
     partial void InsertPhieuNhap(PhieuNhap instance);
     partial void UpdatePhieuNhap(PhieuNhap instance);
     partial void DeletePhieuNhap(PhieuNhap instance);
+<<<<<<< HEAD
     partial void InsertSanPham(SanPham instance);
     partial void UpdateSanPham(SanPham instance);
     partial void DeleteSanPham(SanPham instance);
@@ -79,6 +99,24 @@ namespace Nhom6.Models
 		
 		public QLNHDataContext() : 
 				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLWEBNUOCHOAConnectionString1"].ConnectionString, mappingSource)
+=======
+    partial void InsertTraLoi(TraLoi instance);
+    partial void UpdateTraLoi(TraLoi instance);
+    partial void DeleteTraLoi(TraLoi instance);
+    partial void InsertSanPham(SanPham instance);
+    partial void UpdateSanPham(SanPham instance);
+    partial void DeleteSanPham(SanPham instance);
+    partial void InsertHangNH(HangNH instance);
+    partial void UpdateHangNH(HangNH instance);
+    partial void DeleteHangNH(HangNH instance);
+    partial void InsertCauHoi(CauHoi instance);
+    partial void UpdateCauHoi(CauHoi instance);
+    partial void DeleteCauHoi(CauHoi instance);
+    #endregion
+		
+		public QLNHDataContext() : 
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["QLWEBNUOCHOAConnectionString"].ConnectionString, mappingSource)
+>>>>>>> le_chinh
 		{
 			OnCreated();
 		}
@@ -115,6 +153,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		public System.Data.Linq.Table<CauHoi> CauHois
 		{
 			get
@@ -123,6 +162,8 @@ namespace Nhom6.Models
 			}
 		}
 		
+=======
+>>>>>>> le_chinh
 		public System.Data.Linq.Table<ChucNang> ChucNangs
 		{
 			get
@@ -131,6 +172,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		public System.Data.Linq.Table<CTDDH> CTDDHs
 		{
 			get
@@ -144,6 +186,21 @@ namespace Nhom6.Models
 			get
 			{
 				return this.GetTable<CTCN>();
+=======
+		public System.Data.Linq.Table<CTCN> CTCNs
+		{
+			get
+			{
+				return this.GetTable<CTCN>();
+			}
+		}
+		
+		public System.Data.Linq.Table<CTDDH> CTDDHs
+		{
+			get
+			{
+				return this.GetTable<CTDDH>();
+>>>>>>> le_chinh
 			}
 		}
 		
@@ -171,6 +228,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		public System.Data.Linq.Table<HangNH> HangNHs
 		{
 			get
@@ -179,6 +237,8 @@ namespace Nhom6.Models
 			}
 		}
 		
+=======
+>>>>>>> le_chinh
 		public System.Data.Linq.Table<LoaiNH> LoaiNHs
 		{
 			get
@@ -203,6 +263,17 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
+=======
+		public System.Data.Linq.Table<TraLoi> TraLois
+		{
+			get
+			{
+				return this.GetTable<TraLoi>();
+			}
+		}
+		
+>>>>>>> le_chinh
 		public System.Data.Linq.Table<SanPham> SanPhams
 		{
 			get
@@ -211,6 +282,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		public System.Data.Linq.Table<Table_1> Table_1s
 		{
 			get
@@ -224,6 +296,21 @@ namespace Nhom6.Models
 			get
 			{
 				return this.GetTable<TraLoi>();
+=======
+		public System.Data.Linq.Table<HangNH> HangNHs
+		{
+			get
+			{
+				return this.GetTable<HangNH>();
+			}
+		}
+		
+		public System.Data.Linq.Table<CauHoi> CauHois
+		{
+			get
+			{
+				return this.GetTable<CauHoi>();
+>>>>>>> le_chinh
 			}
 		}
 	}
@@ -394,12 +481,18 @@ namespace Nhom6.Models
 		}
 	}
 	
+<<<<<<< HEAD
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CauHoi")]
 	public partial class CauHoi : INotifyPropertyChanging, INotifyPropertyChanged
+=======
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChucNang")]
+	public partial class ChucNang : INotifyPropertyChanging, INotifyPropertyChanged
+>>>>>>> le_chinh
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+<<<<<<< HEAD
 		private int _MaCauHoi;
 		
 		private string _NoiDung;
@@ -411,11 +504,23 @@ namespace Nhom6.Models
 		private EntitySet<TraLoi> _TraLois;
 		
 		private EntityRef<KhachHang> _KhachHang;
+=======
+		private int _MaCN;
+		
+		private string _TenCN;
+		
+		private string _Action;
+		
+		private string _Controller;
+		
+		private EntitySet<CTCN> _CTCNs;
+>>>>>>> le_chinh
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+<<<<<<< HEAD
     partial void OnMaCauHoiChanging(int value);
     partial void OnMaCauHoiChanged();
     partial void OnNoiDungChanging(string value);
@@ -449,10 +554,45 @@ namespace Nhom6.Models
 					this._MaCauHoi = value;
 					this.SendPropertyChanged("MaCauHoi");
 					this.OnMaCauHoiChanged();
+=======
+    partial void OnMaCNChanging(int value);
+    partial void OnMaCNChanged();
+    partial void OnTenCNChanging(string value);
+    partial void OnTenCNChanged();
+    partial void OnActionChanging(string value);
+    partial void OnActionChanged();
+    partial void OnControllerChanging(string value);
+    partial void OnControllerChanged();
+    #endregion
+		
+		public ChucNang()
+		{
+			this._CTCNs = new EntitySet<CTCN>(new Action<CTCN>(this.attach_CTCNs), new Action<CTCN>(this.detach_CTCNs));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCN", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaCN
+		{
+			get
+			{
+				return this._MaCN;
+			}
+			set
+			{
+				if ((this._MaCN != value))
+				{
+					this.OnMaCNChanging(value);
+					this.SendPropertyChanging();
+					this._MaCN = value;
+					this.SendPropertyChanged("MaCN");
+					this.OnMaCNChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NoiDung", DbType="NVarChar(1000)")]
 		public string NoiDung
 		{
@@ -469,10 +609,29 @@ namespace Nhom6.Models
 					this._NoiDung = value;
 					this.SendPropertyChanged("NoiDung");
 					this.OnNoiDungChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenCN", DbType="NVarChar(50)")]
+		public string TenCN
+		{
+			get
+			{
+				return this._TenCN;
+			}
+			set
+			{
+				if ((this._TenCN != value))
+				{
+					this.OnTenCNChanging(value);
+					this.SendPropertyChanging();
+					this._TenCN = value;
+					this.SendPropertyChanged("TenCN");
+					this.OnTenCNChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="Int")]
 		public System.Nullable<int> MaKH
 		{
@@ -493,10 +652,29 @@ namespace Nhom6.Models
 					this._MaKH = value;
 					this.SendPropertyChanged("MaKH");
 					this.OnMaKHChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Action", DbType="NVarChar(50)")]
+		public string Action
+		{
+			get
+			{
+				return this._Action;
+			}
+			set
+			{
+				if ((this._Action != value))
+				{
+					this.OnActionChanging(value);
+					this.SendPropertyChanging();
+					this._Action = value;
+					this.SendPropertyChanged("Action");
+					this.OnActionChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TraLoi", DbType="Int")]
 		public System.Nullable<int> TraLoi
 		{
@@ -513,10 +691,29 @@ namespace Nhom6.Models
 					this._TraLoi = value;
 					this.SendPropertyChanged("TraLoi");
 					this.OnTraLoiChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Controller", DbType="NVarChar(50)")]
+		public string Controller
+		{
+			get
+			{
+				return this._Controller;
+			}
+			set
+			{
+				if ((this._Controller != value))
+				{
+					this.OnControllerChanging(value);
+					this.SendPropertyChanging();
+					this._Controller = value;
+					this.SendPropertyChanged("Controller");
+					this.OnControllerChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="CauHoi_TraLoi", Storage="_TraLois", ThisKey="MaCauHoi", OtherKey="MaCauHoi")]
 		public EntitySet<TraLoi> TraLois
 		{
@@ -561,6 +758,18 @@ namespace Nhom6.Models
 					}
 					this.SendPropertyChanged("KhachHang");
 				}
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucNang_CTCN", Storage="_CTCNs", ThisKey="MaCN", OtherKey="MaCN")]
+		public EntitySet<CTCN> CTCNs
+		{
+			get
+			{
+				return this._CTCNs;
+			}
+			set
+			{
+				this._CTCNs.Assign(value);
+>>>>>>> le_chinh
 			}
 		}
 		
@@ -584,6 +793,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		private void attach_TraLois(TraLoi entity)
 		{
 			this.SendPropertyChanging();
@@ -599,12 +809,30 @@ namespace Nhom6.Models
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChucNang")]
 	public partial class ChucNang : INotifyPropertyChanging, INotifyPropertyChanged
+=======
+		private void attach_CTCNs(CTCN entity)
+		{
+			this.SendPropertyChanging();
+			entity.ChucNang = this;
+		}
+		
+		private void detach_CTCNs(CTCN entity)
+		{
+			this.SendPropertyChanging();
+			entity.ChucNang = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CTCN")]
+	public partial class CTCN : INotifyPropertyChanging, INotifyPropertyChanged
+>>>>>>> le_chinh
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _MaCN;
 		
+<<<<<<< HEAD
 		private string _TenCN;
 		
 		private string _Action;
@@ -612,6 +840,13 @@ namespace Nhom6.Models
 		private string _Controller;
 		
 		private EntitySet<CTCN> _CTCNs;
+=======
+		private string _TenTK;
+		
+		private EntityRef<Admin> _Admin;
+		
+		private EntityRef<ChucNang> _ChucNang;
+>>>>>>> le_chinh
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -619,6 +854,7 @@ namespace Nhom6.Models
     partial void OnCreated();
     partial void OnMaCNChanging(int value);
     partial void OnMaCNChanged();
+<<<<<<< HEAD
     partial void OnTenCNChanging(string value);
     partial void OnTenCNChanged();
     partial void OnActionChanging(string value);
@@ -630,6 +866,16 @@ namespace Nhom6.Models
 		public ChucNang()
 		{
 			this._CTCNs = new EntitySet<CTCN>(new Action<CTCN>(this.attach_CTCNs), new Action<CTCN>(this.detach_CTCNs));
+=======
+    partial void OnTenTKChanging(string value);
+    partial void OnTenTKChanged();
+    #endregion
+		
+		public CTCN()
+		{
+			this._Admin = default(EntityRef<Admin>);
+			this._ChucNang = default(EntityRef<ChucNang>);
+>>>>>>> le_chinh
 			OnCreated();
 		}
 		
@@ -644,6 +890,13 @@ namespace Nhom6.Models
 			{
 				if ((this._MaCN != value))
 				{
+<<<<<<< HEAD
+=======
+					if (this._ChucNang.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+>>>>>>> le_chinh
 					this.OnMaCNChanging(value);
 					this.SendPropertyChanging();
 					this._MaCN = value;
@@ -653,6 +906,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenCN", DbType="NVarChar(50)")]
 		public string TenCN
 		{
@@ -669,10 +923,33 @@ namespace Nhom6.Models
 					this._TenCN = value;
 					this.SendPropertyChanged("TenCN");
 					this.OnTenCNChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTK", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string TenTK
+		{
+			get
+			{
+				return this._TenTK;
+			}
+			set
+			{
+				if ((this._TenTK != value))
+				{
+					if (this._Admin.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnTenTKChanging(value);
+					this.SendPropertyChanging();
+					this._TenTK = value;
+					this.SendPropertyChanged("TenTK");
+					this.OnTenTKChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Action", DbType="NVarChar(50)")]
 		public string Action
 		{
@@ -689,10 +966,43 @@ namespace Nhom6.Models
 					this._Action = value;
 					this.SendPropertyChanged("Action");
 					this.OnActionChanged();
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Admin_CTCN", Storage="_Admin", ThisKey="TenTK", OtherKey="TenTK", IsForeignKey=true)]
+		public Admin Admin
+		{
+			get
+			{
+				return this._Admin.Entity;
+			}
+			set
+			{
+				Admin previousValue = this._Admin.Entity;
+				if (((previousValue != value) 
+							|| (this._Admin.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Admin.Entity = null;
+						previousValue.CTCNs.Remove(this);
+					}
+					this._Admin.Entity = value;
+					if ((value != null))
+					{
+						value.CTCNs.Add(this);
+						this._TenTK = value.TenTK;
+					}
+					else
+					{
+						this._TenTK = default(string);
+					}
+					this.SendPropertyChanged("Admin");
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Controller", DbType="NVarChar(50)")]
 		public string Controller
 		{
@@ -709,10 +1019,43 @@ namespace Nhom6.Models
 					this._Controller = value;
 					this.SendPropertyChanged("Controller");
 					this.OnControllerChanged();
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucNang_CTCN", Storage="_ChucNang", ThisKey="MaCN", OtherKey="MaCN", IsForeignKey=true)]
+		public ChucNang ChucNang
+		{
+			get
+			{
+				return this._ChucNang.Entity;
+			}
+			set
+			{
+				ChucNang previousValue = this._ChucNang.Entity;
+				if (((previousValue != value) 
+							|| (this._ChucNang.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ChucNang.Entity = null;
+						previousValue.CTCNs.Remove(this);
+					}
+					this._ChucNang.Entity = value;
+					if ((value != null))
+					{
+						value.CTCNs.Add(this);
+						this._MaCN = value.MaCN;
+					}
+					else
+					{
+						this._MaCN = default(int);
+					}
+					this.SendPropertyChanged("ChucNang");
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucNang_CTCN", Storage="_CTCNs", ThisKey="MaCN", OtherKey="MaCN")]
 		public EntitySet<CTCN> CTCNs
 		{
@@ -726,6 +1069,8 @@ namespace Nhom6.Models
 			}
 		}
 		
+=======
+>>>>>>> le_chinh
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -745,6 +1090,7 @@ namespace Nhom6.Models
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
+<<<<<<< HEAD
 		
 		private void attach_CTCNs(CTCN entity)
 		{
@@ -757,6 +1103,8 @@ namespace Nhom6.Models
 			this.SendPropertyChanging();
 			entity.ChucNang = null;
 		}
+=======
+>>>>>>> le_chinh
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CTDDH")]
@@ -775,6 +1123,11 @@ namespace Nhom6.Models
 		
 		private EntityRef<DonDatHang> _DonDatHang;
 		
+<<<<<<< HEAD
+=======
+		private EntityRef<NH> _NH;
+		
+>>>>>>> le_chinh
 		private EntityRef<SanPham> _SanPham;
 		
     #region Extensibility Method Definitions
@@ -794,6 +1147,10 @@ namespace Nhom6.Models
 		public CTDDH()
 		{
 			this._DonDatHang = default(EntityRef<DonDatHang>);
+<<<<<<< HEAD
+=======
+			this._NH = default(EntityRef<NH>);
+>>>>>>> le_chinh
 			this._SanPham = default(EntityRef<SanPham>);
 			OnCreated();
 		}
@@ -833,7 +1190,11 @@ namespace Nhom6.Models
 			{
 				if ((this._MANH != value))
 				{
+<<<<<<< HEAD
 					if (this._SanPham.HasLoadedOrAssignedValue)
+=======
+					if ((this._NH.HasLoadedOrAssignedValue || this._SanPham.HasLoadedOrAssignedValue))
+>>>>>>> le_chinh
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -920,6 +1281,43 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NH_CTDDH", Storage="_NH", ThisKey="MANH", OtherKey="MaNH", IsForeignKey=true)]
+		public NH NH
+		{
+			get
+			{
+				return this._NH.Entity;
+			}
+			set
+			{
+				NH previousValue = this._NH.Entity;
+				if (((previousValue != value) 
+							|| (this._NH.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._NH.Entity = null;
+						previousValue.CTDDHs.Remove(this);
+					}
+					this._NH.Entity = value;
+					if ((value != null))
+					{
+						value.CTDDHs.Add(this);
+						this._MANH = value.MaNH;
+					}
+					else
+					{
+						this._MANH = default(int);
+					}
+					this.SendPropertyChanged("NH");
+				}
+			}
+		}
+		
+>>>>>>> le_chinh
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_CTDDH", Storage="_SanPham", ThisKey="MANH", OtherKey="MaNH", IsForeignKey=true)]
 		public SanPham SanPham
 		{
@@ -975,12 +1373,18 @@ namespace Nhom6.Models
 		}
 	}
 	
+<<<<<<< HEAD
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CTCN")]
 	public partial class CTCN : INotifyPropertyChanging, INotifyPropertyChanged
+=======
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CTPN")]
+	public partial class CTPN : INotifyPropertyChanging, INotifyPropertyChanged
+>>>>>>> le_chinh
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+<<<<<<< HEAD
 		private int _MaCN;
 		
 		private string _TenTK;
@@ -988,11 +1392,27 @@ namespace Nhom6.Models
 		private EntityRef<Admin> _Admin;
 		
 		private EntityRef<ChucNang> _ChucNang;
+=======
+		private int _MaPhieu;
+		
+		private int _MaNH;
+		
+		private System.Nullable<int> _SoLuong;
+		
+		private System.Nullable<decimal> _DonGia;
+		
+		private EntityRef<NH> _NH;
+		
+		private EntityRef<PhieuNhap> _PhieuNhap;
+		
+		private EntityRef<SanPham> _SanPham;
+>>>>>>> le_chinh
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+<<<<<<< HEAD
     partial void OnMaCNChanging(int value);
     partial void OnMaCNChanged();
     partial void OnTenTKChanging(string value);
@@ -1026,10 +1446,51 @@ namespace Nhom6.Models
 					this._MaCN = value;
 					this.SendPropertyChanged("MaCN");
 					this.OnMaCNChanged();
+=======
+    partial void OnMaPhieuChanging(int value);
+    partial void OnMaPhieuChanged();
+    partial void OnMaNHChanging(int value);
+    partial void OnMaNHChanged();
+    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanged();
+    partial void OnDonGiaChanging(System.Nullable<decimal> value);
+    partial void OnDonGiaChanged();
+    #endregion
+		
+		public CTPN()
+		{
+			this._NH = default(EntityRef<NH>);
+			this._PhieuNhap = default(EntityRef<PhieuNhap>);
+			this._SanPham = default(EntityRef<SanPham>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieu", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaPhieu
+		{
+			get
+			{
+				return this._MaPhieu;
+			}
+			set
+			{
+				if ((this._MaPhieu != value))
+				{
+					if (this._PhieuNhap.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaPhieuChanging(value);
+					this.SendPropertyChanging();
+					this._MaPhieu = value;
+					this.SendPropertyChanged("MaPhieu");
+					this.OnMaPhieuChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTK", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string TenTK
 		{
@@ -1050,10 +1511,33 @@ namespace Nhom6.Models
 					this._TenTK = value;
 					this.SendPropertyChanged("TenTK");
 					this.OnTenTKChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNH", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaNH
+		{
+			get
+			{
+				return this._MaNH;
+			}
+			set
+			{
+				if ((this._MaNH != value))
+				{
+					if ((this._NH.HasLoadedOrAssignedValue || this._SanPham.HasLoadedOrAssignedValue))
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaNHChanging(value);
+					this.SendPropertyChanging();
+					this._MaNH = value;
+					this.SendPropertyChanged("MaNH");
+					this.OnMaNHChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Admin_CTCN", Storage="_Admin", ThisKey="TenTK", OtherKey="TenTK", IsForeignKey=true)]
 		public Admin Admin
 		{
@@ -1066,10 +1550,65 @@ namespace Nhom6.Models
 				Admin previousValue = this._Admin.Entity;
 				if (((previousValue != value) 
 							|| (this._Admin.HasLoadedOrAssignedValue == false)))
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
+		{
+			get
+			{
+				return this._SoLuong;
+			}
+			set
+			{
+				if ((this._SoLuong != value))
+				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
+					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> DonGia
+		{
+			get
+			{
+				return this._DonGia;
+			}
+			set
+			{
+				if ((this._DonGia != value))
+				{
+					this.OnDonGiaChanging(value);
+					this.SendPropertyChanging();
+					this._DonGia = value;
+					this.SendPropertyChanged("DonGia");
+					this.OnDonGiaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NH_CTPN", Storage="_NH", ThisKey="MaNH", OtherKey="MaNH", IsForeignKey=true)]
+		public NH NH
+		{
+			get
+			{
+				return this._NH.Entity;
+			}
+			set
+			{
+				NH previousValue = this._NH.Entity;
+				if (((previousValue != value) 
+							|| (this._NH.HasLoadedOrAssignedValue == false)))
+>>>>>>> le_chinh
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
+<<<<<<< HEAD
 						this._Admin.Entity = null;
 						previousValue.CTCNs.Remove(this);
 					}
@@ -1084,10 +1623,27 @@ namespace Nhom6.Models
 						this._TenTK = default(string);
 					}
 					this.SendPropertyChanged("Admin");
+=======
+						this._NH.Entity = null;
+						previousValue.CTPNs.Remove(this);
+					}
+					this._NH.Entity = value;
+					if ((value != null))
+					{
+						value.CTPNs.Add(this);
+						this._MaNH = value.MaNH;
+					}
+					else
+					{
+						this._MaNH = default(int);
+					}
+					this.SendPropertyChanged("NH");
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucNang_CTCN", Storage="_ChucNang", ThisKey="MaCN", OtherKey="MaCN", IsForeignKey=true)]
 		public ChucNang ChucNang
 		{
@@ -1276,6 +1832,14 @@ namespace Nhom6.Models
 			get
 			{
 				return this._PhieuNhap.Entity;
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PhieuNhap_CTPN", Storage="_PhieuNhap", ThisKey="MaPhieu", OtherKey="MaPhieu", IsForeignKey=true)]
+		public PhieuNhap PhieuNhap
+		{
+			get
+			{
+				return this._PhieuNhap.Entity;
+>>>>>>> le_chinh
 			}
 			set
 			{
@@ -1632,10 +2196,17 @@ namespace Nhom6.Models
 		
 		private string _Email;
 		
+<<<<<<< HEAD
 		private EntitySet<CauHoi> _CauHois;
 		
 		private EntitySet<DonDatHang> _DonDatHangs;
 		
+=======
+		private EntitySet<DonDatHang> _DonDatHangs;
+		
+		private EntitySet<CauHoi> _CauHois;
+		
+>>>>>>> le_chinh
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1660,8 +2231,13 @@ namespace Nhom6.Models
 		
 		public KhachHang()
 		{
+<<<<<<< HEAD
 			this._CauHois = new EntitySet<CauHoi>(new Action<CauHoi>(this.attach_CauHois), new Action<CauHoi>(this.detach_CauHois));
 			this._DonDatHangs = new EntitySet<DonDatHang>(new Action<DonDatHang>(this.attach_DonDatHangs), new Action<DonDatHang>(this.detach_DonDatHangs));
+=======
+			this._DonDatHangs = new EntitySet<DonDatHang>(new Action<DonDatHang>(this.attach_DonDatHangs), new Action<DonDatHang>(this.detach_DonDatHangs));
+			this._CauHois = new EntitySet<CauHoi>(new Action<CauHoi>(this.attach_CauHois), new Action<CauHoi>(this.detach_CauHois));
+>>>>>>> le_chinh
 			OnCreated();
 		}
 		
@@ -1825,6 +2401,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_CauHoi", Storage="_CauHois", ThisKey="MaKH", OtherKey="MaKH")]
 		public EntitySet<CauHoi> CauHois
 		{
@@ -1848,6 +2425,31 @@ namespace Nhom6.Models
 			set
 			{
 				this._DonDatHangs.Assign(value);
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_DonDatHang", Storage="_DonDatHangs", ThisKey="MaKH", OtherKey="MaKH")]
+		public EntitySet<DonDatHang> DonDatHangs
+		{
+			get
+			{
+				return this._DonDatHangs;
+			}
+			set
+			{
+				this._DonDatHangs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_CauHoi", Storage="_CauHois", ThisKey="MaKH", OtherKey="MaKH")]
+		public EntitySet<CauHoi> CauHois
+		{
+			get
+			{
+				return this._CauHois;
+			}
+			set
+			{
+				this._CauHois.Assign(value);
+>>>>>>> le_chinh
 			}
 		}
 		
@@ -1871,40 +2473,69 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		private void attach_CauHois(CauHoi entity)
+=======
+		private void attach_DonDatHangs(DonDatHang entity)
+>>>>>>> le_chinh
 		{
 			this.SendPropertyChanging();
 			entity.KhachHang = this;
 		}
 		
+<<<<<<< HEAD
 		private void detach_CauHois(CauHoi entity)
+=======
+		private void detach_DonDatHangs(DonDatHang entity)
+>>>>>>> le_chinh
 		{
 			this.SendPropertyChanging();
 			entity.KhachHang = null;
 		}
 		
+<<<<<<< HEAD
 		private void attach_DonDatHangs(DonDatHang entity)
+=======
+		private void attach_CauHois(CauHoi entity)
+>>>>>>> le_chinh
 		{
 			this.SendPropertyChanging();
 			entity.KhachHang = this;
 		}
 		
+<<<<<<< HEAD
 		private void detach_DonDatHangs(DonDatHang entity)
+=======
+		private void detach_CauHois(CauHoi entity)
+>>>>>>> le_chinh
 		{
 			this.SendPropertyChanging();
 			entity.KhachHang = null;
 		}
 	}
 	
+<<<<<<< HEAD
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HangNH")]
 	public partial class HangNH : INotifyPropertyChanging, INotifyPropertyChanged
+=======
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LoaiNH")]
+	public partial class LoaiNH : INotifyPropertyChanging, INotifyPropertyChanged
+>>>>>>> le_chinh
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+<<<<<<< HEAD
 		private int _MaHang;
 		
 		private string _TenHang;
+=======
+		private int _MaLoai;
+		
+		private string _TenLoai;
+		
+		private EntitySet<NH> _NHs;
+>>>>>>> le_chinh
 		
 		private EntitySet<SanPham> _SanPhams;
 		
@@ -1912,6 +2543,7 @@ namespace Nhom6.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+<<<<<<< HEAD
     partial void OnMaHangChanging(int value);
     partial void OnMaHangChanged();
     partial void OnTenHangChanging(string value);
@@ -1920,10 +2552,22 @@ namespace Nhom6.Models
 		
 		public HangNH()
 		{
+=======
+    partial void OnMaLoaiChanging(int value);
+    partial void OnMaLoaiChanged();
+    partial void OnTenLoaiChanging(string value);
+    partial void OnTenLoaiChanged();
+    #endregion
+		
+		public LoaiNH()
+		{
+			this._NHs = new EntitySet<NH>(new Action<NH>(this.attach_NHs), new Action<NH>(this.detach_NHs));
+>>>>>>> le_chinh
 			this._SanPhams = new EntitySet<SanPham>(new Action<SanPham>(this.attach_SanPhams), new Action<SanPham>(this.detach_SanPhams));
 			OnCreated();
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHang", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int MaHang
 		{
@@ -1940,10 +2584,29 @@ namespace Nhom6.Models
 					this._MaHang = value;
 					this.SendPropertyChanged("MaHang");
 					this.OnMaHangChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoai", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaLoai
+		{
+			get
+			{
+				return this._MaLoai;
+			}
+			set
+			{
+				if ((this._MaLoai != value))
+				{
+					this.OnMaLoaiChanging(value);
+					this.SendPropertyChanging();
+					this._MaLoai = value;
+					this.SendPropertyChanged("MaLoai");
+					this.OnMaLoaiChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenHang", DbType="NVarChar(50)")]
 		public string TenHang
 		{
@@ -2074,6 +2737,18 @@ namespace Nhom6.Models
 			set
 			{
 				if ((this._TenLoai != value))
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenLoai", DbType="NVarChar(50)")]
+		public string TenLoai
+		{
+			get
+			{
+				return this._TenLoai;
+			}
+			set
+			{
+				if ((this._TenLoai != value))
+>>>>>>> le_chinh
 				{
 					this.OnTenLoaiChanging(value);
 					this.SendPropertyChanging();
@@ -2110,6 +2785,7 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiNH_Table_1", Storage="_Table_1s", ThisKey="MaLoai", OtherKey="MaLoai")]
 		public EntitySet<Table_1> Table_1s
 		{
@@ -2123,6 +2799,8 @@ namespace Nhom6.Models
 			}
 		}
 		
+=======
+>>>>>>> le_chinh
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -2166,6 +2844,7 @@ namespace Nhom6.Models
 			this.SendPropertyChanging();
 			entity.LoaiNH = null;
 		}
+<<<<<<< HEAD
 		
 		private void attach_Table_1s(Table_1 entity)
 		{
@@ -2178,6 +2857,8 @@ namespace Nhom6.Models
 			this.SendPropertyChanging();
 			entity.LoaiNH = null;
 		}
+=======
+>>>>>>> le_chinh
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NH")]
@@ -2212,6 +2893,13 @@ namespace Nhom6.Models
 		
 		private System.Nullable<int> _SoLuong;
 		
+<<<<<<< HEAD
+=======
+		private EntitySet<CTDDH> _CTDDHs;
+		
+		private EntitySet<CTPN> _CTPNs;
+		
+>>>>>>> le_chinh
 		private EntityRef<LoaiNH> _LoaiNH;
 		
     #region Extensibility Method Definitions
@@ -2248,6 +2936,11 @@ namespace Nhom6.Models
 		
 		public NH()
 		{
+<<<<<<< HEAD
+=======
+			this._CTDDHs = new EntitySet<CTDDH>(new Action<CTDDH>(this.attach_CTDDHs), new Action<CTDDH>(this.detach_CTDDHs));
+			this._CTPNs = new EntitySet<CTPN>(new Action<CTPN>(this.attach_CTPNs), new Action<CTPN>(this.detach_CTPNs));
+>>>>>>> le_chinh
 			this._LoaiNH = default(EntityRef<LoaiNH>);
 			OnCreated();
 		}
@@ -2516,6 +3209,35 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NH_CTDDH", Storage="_CTDDHs", ThisKey="MaNH", OtherKey="MANH")]
+		public EntitySet<CTDDH> CTDDHs
+		{
+			get
+			{
+				return this._CTDDHs;
+			}
+			set
+			{
+				this._CTDDHs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NH_CTPN", Storage="_CTPNs", ThisKey="MaNH", OtherKey="MaNH")]
+		public EntitySet<CTPN> CTPNs
+		{
+			get
+			{
+				return this._CTPNs;
+			}
+			set
+			{
+				this._CTPNs.Assign(value);
+			}
+		}
+		
+>>>>>>> le_chinh
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiNH_NH", Storage="_LoaiNH", ThisKey="MaLoai", OtherKey="MaLoai", IsForeignKey=true)]
 		public LoaiNH LoaiNH
 		{
@@ -2569,6 +3291,33 @@ namespace Nhom6.Models
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
+<<<<<<< HEAD
+=======
+		
+		private void attach_CTDDHs(CTDDH entity)
+		{
+			this.SendPropertyChanging();
+			entity.NH = this;
+		}
+		
+		private void detach_CTDDHs(CTDDH entity)
+		{
+			this.SendPropertyChanging();
+			entity.NH = null;
+		}
+		
+		private void attach_CTPNs(CTPN entity)
+		{
+			this.SendPropertyChanging();
+			entity.NH = this;
+		}
+		
+		private void detach_CTPNs(CTPN entity)
+		{
+			this.SendPropertyChanging();
+			entity.NH = null;
+		}
+>>>>>>> le_chinh
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.PhieuNhap")]
@@ -2685,12 +3434,18 @@ namespace Nhom6.Models
 		}
 	}
 	
+<<<<<<< HEAD
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SanPham")]
 	public partial class SanPham : INotifyPropertyChanging, INotifyPropertyChanged
+=======
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TraLoi")]
+	public partial class TraLoi : INotifyPropertyChanging, INotifyPropertyChanged
+>>>>>>> le_chinh
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+<<<<<<< HEAD
 		private int _MaNH;
 		
 		private string _TenNH;
@@ -2726,11 +3481,25 @@ namespace Nhom6.Models
 		private EntityRef<HangNH> _HangNH;
 		
 		private EntityRef<LoaiNH> _LoaiNH;
+=======
+		private int _MaCauTL;
+		
+		private string _TraLoi1;
+		
+		private string _TenTK;
+		
+		private System.Nullable<int> _MaCauHoi;
+		
+		private EntityRef<Admin> _Admin;
+		
+		private EntityRef<CauHoi> _CauHoi;
+>>>>>>> le_chinh
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+<<<<<<< HEAD
     partial void OnMaNHChanging(int value);
     partial void OnMaNHChanged();
     partial void OnTenNHChanging(string value);
@@ -2946,10 +3715,46 @@ namespace Nhom6.Models
 					this._XuatXu = value;
 					this.SendPropertyChanged("XuatXu");
 					this.OnXuatXuChanged();
+=======
+    partial void OnMaCauTLChanging(int value);
+    partial void OnMaCauTLChanged();
+    partial void OnTraLoi1Changing(string value);
+    partial void OnTraLoi1Changed();
+    partial void OnTenTKChanging(string value);
+    partial void OnTenTKChanged();
+    partial void OnMaCauHoiChanging(System.Nullable<int> value);
+    partial void OnMaCauHoiChanged();
+    #endregion
+		
+		public TraLoi()
+		{
+			this._Admin = default(EntityRef<Admin>);
+			this._CauHoi = default(EntityRef<CauHoi>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCauTL", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaCauTL
+		{
+			get
+			{
+				return this._MaCauTL;
+			}
+			set
+			{
+				if ((this._MaCauTL != value))
+				{
+					this.OnMaCauTLChanging(value);
+					this.SendPropertyChanging();
+					this._MaCauTL = value;
+					this.SendPropertyChanged("MaCauTL");
+					this.OnMaCauTLChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_hinh", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
 		public string hinh
 		{
@@ -2966,10 +3771,29 @@ namespace Nhom6.Models
 					this._hinh = value;
 					this.SendPropertyChanged("hinh");
 					this.OnhinhChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="TraLoi", Storage="_TraLoi1", DbType="NVarChar(1000)")]
+		public string TraLoi1
+		{
+			get
+			{
+				return this._TraLoi1;
+			}
+			set
+			{
+				if ((this._TraLoi1 != value))
+				{
+					this.OnTraLoi1Changing(value);
+					this.SendPropertyChanging();
+					this._TraLoi1 = value;
+					this.SendPropertyChanged("TraLoi1");
+					this.OnTraLoi1Changed();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoai", DbType="Int")]
 		public System.Nullable<int> MaLoai
 		{
@@ -2990,10 +3814,33 @@ namespace Nhom6.Models
 					this._MaLoai = value;
 					this.SendPropertyChanged("MaLoai");
 					this.OnMaLoaiChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTK", DbType="NVarChar(50)")]
+		public string TenTK
+		{
+			get
+			{
+				return this._TenTK;
+			}
+			set
+			{
+				if ((this._TenTK != value))
+				{
+					if (this._Admin.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnTenTKChanging(value);
+					this.SendPropertyChanging();
+					this._TenTK = value;
+					this.SendPropertyChanged("TenTK");
+					this.OnTenTKChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHang", DbType="Int")]
 		public System.Nullable<int> MaHang
 		{
@@ -3054,10 +3901,33 @@ namespace Nhom6.Models
 					this._MoTa = value;
 					this.SendPropertyChanged("MoTa");
 					this.OnMoTaChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCauHoi", DbType="Int")]
+		public System.Nullable<int> MaCauHoi
+		{
+			get
+			{
+				return this._MaCauHoi;
+			}
+			set
+			{
+				if ((this._MaCauHoi != value))
+				{
+					if (this._CauHoi.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaCauHoiChanging(value);
+					this.SendPropertyChanging();
+					this._MaCauHoi = value;
+					this.SendPropertyChanged("MaCauHoi");
+					this.OnMaCauHoiChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_CTDDH", Storage="_CTDDHs", ThisKey="MaNH", OtherKey="MANH")]
 		public EntitySet<CTDDH> CTDDHs
 		{
@@ -3096,10 +3966,25 @@ namespace Nhom6.Models
 				HangNH previousValue = this._HangNH.Entity;
 				if (((previousValue != value) 
 							|| (this._HangNH.HasLoadedOrAssignedValue == false)))
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Admin_TraLoi", Storage="_Admin", ThisKey="TenTK", OtherKey="TenTK", IsForeignKey=true)]
+		public Admin Admin
+		{
+			get
+			{
+				return this._Admin.Entity;
+			}
+			set
+			{
+				Admin previousValue = this._Admin.Entity;
+				if (((previousValue != value) 
+							|| (this._Admin.HasLoadedOrAssignedValue == false)))
+>>>>>>> le_chinh
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
+<<<<<<< HEAD
 						this._HangNH.Entity = null;
 						previousValue.SanPhams.Remove(this);
 					}
@@ -3114,10 +3999,27 @@ namespace Nhom6.Models
 						this._MaHang = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("HangNH");
+=======
+						this._Admin.Entity = null;
+						previousValue.TraLois.Remove(this);
+					}
+					this._Admin.Entity = value;
+					if ((value != null))
+					{
+						value.TraLois.Add(this);
+						this._TenTK = value.TenTK;
+					}
+					else
+					{
+						this._TenTK = default(string);
+					}
+					this.SendPropertyChanged("Admin");
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiNH_SanPham", Storage="_LoaiNH", ThisKey="MaLoai", OtherKey="MaLoai", IsForeignKey=true)]
 		public LoaiNH LoaiNH
 		{
@@ -3130,10 +4032,25 @@ namespace Nhom6.Models
 				LoaiNH previousValue = this._LoaiNH.Entity;
 				if (((previousValue != value) 
 							|| (this._LoaiNH.HasLoadedOrAssignedValue == false)))
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="CauHoi_TraLoi", Storage="_CauHoi", ThisKey="MaCauHoi", OtherKey="MaCauHoi", IsForeignKey=true)]
+		public CauHoi CauHoi
+		{
+			get
+			{
+				return this._CauHoi.Entity;
+			}
+			set
+			{
+				CauHoi previousValue = this._CauHoi.Entity;
+				if (((previousValue != value) 
+							|| (this._CauHoi.HasLoadedOrAssignedValue == false)))
+>>>>>>> le_chinh
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
+<<<<<<< HEAD
 						this._LoaiNH.Entity = null;
 						previousValue.SanPhams.Remove(this);
 					}
@@ -3148,10 +4065,27 @@ namespace Nhom6.Models
 						this._MaLoai = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("LoaiNH");
+=======
+						this._CauHoi.Entity = null;
+						previousValue.TraLois.Remove(this);
+					}
+					this._CauHoi.Entity = value;
+					if ((value != null))
+					{
+						value.TraLois.Add(this);
+						this._MaCauHoi = value.MaCauHoi;
+					}
+					else
+					{
+						this._MaCauHoi = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("CauHoi");
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -3199,6 +4133,31 @@ namespace Nhom6.Models
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Table_1")]
 	public partial class Table_1 : INotifyPropertyChanging, INotifyPropertyChanged
+=======
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SanPham")]
+	public partial class SanPham : INotifyPropertyChanging, INotifyPropertyChanged
+>>>>>>> le_chinh
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -3231,8 +4190,19 @@ namespace Nhom6.Models
 		
 		private string _MoTa;
 		
+<<<<<<< HEAD
 		private EntityRef<LoaiNH> _LoaiNH;
 		
+=======
+		private EntitySet<CTDDH> _CTDDHs;
+		
+		private EntitySet<CTPN> _CTPNs;
+		
+		private EntityRef<LoaiNH> _LoaiNH;
+		
+		private EntityRef<HangNH> _HangNH;
+		
+>>>>>>> le_chinh
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -3267,9 +4237,18 @@ namespace Nhom6.Models
     partial void OnMoTaChanged();
     #endregion
 		
+<<<<<<< HEAD
 		public Table_1()
 		{
 			this._LoaiNH = default(EntityRef<LoaiNH>);
+=======
+		public SanPham()
+		{
+			this._CTDDHs = new EntitySet<CTDDH>(new Action<CTDDH>(this.attach_CTDDHs), new Action<CTDDH>(this.detach_CTDDHs));
+			this._CTPNs = new EntitySet<CTPN>(new Action<CTPN>(this.attach_CTPNs), new Action<CTPN>(this.detach_CTPNs));
+			this._LoaiNH = default(EntityRef<LoaiNH>);
+			this._HangNH = default(EntityRef<HangNH>);
+>>>>>>> le_chinh
 			OnCreated();
 		}
 		
@@ -3497,6 +4476,10 @@ namespace Nhom6.Models
 			}
 		}
 		
+<<<<<<< HEAD
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHang", DbType="Int")]
+		public System.Nullable<int> MaHang
+=======
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHang", DbType="Int")]
 		public System.Nullable<int> MaHang
 		{
@@ -3508,6 +4491,10 @@ namespace Nhom6.Models
 			{
 				if ((this._MaHang != value))
 				{
+					if (this._HangNH.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
 					this.OnMaHangChanging(value);
 					this.SendPropertyChanging();
 					this._MaHang = value;
@@ -3557,6 +4544,254 @@ namespace Nhom6.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_CTDDH", Storage="_CTDDHs", ThisKey="MaNH", OtherKey="MANH")]
+		public EntitySet<CTDDH> CTDDHs
+		{
+			get
+			{
+				return this._CTDDHs;
+			}
+			set
+			{
+				this._CTDDHs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SanPham_CTPN", Storage="_CTPNs", ThisKey="MaNH", OtherKey="MaNH")]
+		public EntitySet<CTPN> CTPNs
+		{
+			get
+			{
+				return this._CTPNs;
+			}
+			set
+			{
+				this._CTPNs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiNH_SanPham", Storage="_LoaiNH", ThisKey="MaLoai", OtherKey="MaLoai", IsForeignKey=true)]
+		public LoaiNH LoaiNH
+		{
+			get
+			{
+				return this._LoaiNH.Entity;
+			}
+			set
+			{
+				LoaiNH previousValue = this._LoaiNH.Entity;
+				if (((previousValue != value) 
+							|| (this._LoaiNH.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._LoaiNH.Entity = null;
+						previousValue.SanPhams.Remove(this);
+					}
+					this._LoaiNH.Entity = value;
+					if ((value != null))
+					{
+						value.SanPhams.Add(this);
+						this._MaLoai = value.MaLoai;
+					}
+					else
+					{
+						this._MaLoai = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("LoaiNH");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangNH_SanPham", Storage="_HangNH", ThisKey="MaHang", OtherKey="MaHang", IsForeignKey=true)]
+		public HangNH HangNH
+		{
+			get
+			{
+				return this._HangNH.Entity;
+			}
+			set
+			{
+				HangNH previousValue = this._HangNH.Entity;
+				if (((previousValue != value) 
+							|| (this._HangNH.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._HangNH.Entity = null;
+						previousValue.SanPhams.Remove(this);
+					}
+					this._HangNH.Entity = value;
+					if ((value != null))
+					{
+						value.SanPhams.Add(this);
+						this._MaHang = value.MaHang;
+					}
+					else
+					{
+						this._MaHang = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("HangNH");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_CTDDHs(CTDDH entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = this;
+		}
+		
+		private void detach_CTDDHs(CTDDH entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = null;
+		}
+		
+		private void attach_CTPNs(CTPN entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = this;
+		}
+		
+		private void detach_CTPNs(CTPN entity)
+		{
+			this.SendPropertyChanging();
+			entity.SanPham = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HangNH")]
+	public partial class HangNH : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaHang;
+		
+		private string _TenHang;
+		
+		private EntitySet<SanPham> _SanPhams;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaHangChanging(int value);
+    partial void OnMaHangChanged();
+    partial void OnTenHangChanging(string value);
+    partial void OnTenHangChanged();
+    #endregion
+		
+		public HangNH()
+		{
+			this._SanPhams = new EntitySet<SanPham>(new Action<SanPham>(this.attach_SanPhams), new Action<SanPham>(this.detach_SanPhams));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHang", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaHang
+>>>>>>> le_chinh
+		{
+			get
+			{
+				return this._MaHang;
+			}
+			set
+			{
+				if ((this._MaHang != value))
+				{
+					this.OnMaHangChanging(value);
+					this.SendPropertyChanging();
+					this._MaHang = value;
+					this.SendPropertyChanged("MaHang");
+					this.OnMaHangChanged();
+				}
+			}
+		}
+		
+<<<<<<< HEAD
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
+		{
+			get
+			{
+				return this._SoLuong;
+			}
+			set
+			{
+				if ((this._SoLuong != value))
+				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
+					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTa", DbType="NVarChar(1000)")]
+		public string MoTa
+		{
+			get
+			{
+				return this._MoTa;
+			}
+			set
+			{
+				if ((this._MoTa != value))
+				{
+					this.OnMoTaChanging(value);
+					this.SendPropertyChanging();
+					this._MoTa = value;
+					this.SendPropertyChanged("MoTa");
+					this.OnMoTaChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenHang", DbType="NVarChar(50)")]
+		public string TenHang
+		{
+			get
+			{
+				return this._TenHang;
+			}
+			set
+			{
+				if ((this._TenHang != value))
+				{
+					this.OnTenHangChanging(value);
+					this.SendPropertyChanging();
+					this._TenHang = value;
+					this.SendPropertyChanged("TenHang");
+					this.OnTenHangChanged();
+>>>>>>> le_chinh
+				}
+			}
+		}
+		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiNH_Table_1", Storage="_LoaiNH", ThisKey="MaLoai", OtherKey="MaLoai", IsForeignKey=true)]
 		public LoaiNH LoaiNH
 		{
@@ -3588,6 +4823,18 @@ namespace Nhom6.Models
 					}
 					this.SendPropertyChanged("LoaiNH");
 				}
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangNH_SanPham", Storage="_SanPhams", ThisKey="MaHang", OtherKey="MaHang")]
+		public EntitySet<SanPham> SanPhams
+		{
+			get
+			{
+				return this._SanPhams;
+			}
+			set
+			{
+				this._SanPhams.Assign(value);
+>>>>>>> le_chinh
 			}
 		}
 		
@@ -3610,14 +4857,34 @@ namespace Nhom6.Models
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
+<<<<<<< HEAD
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TraLoi")]
 	public partial class TraLoi : INotifyPropertyChanging, INotifyPropertyChanged
+=======
+		
+		private void attach_SanPhams(SanPham entity)
+		{
+			this.SendPropertyChanging();
+			entity.HangNH = this;
+		}
+		
+		private void detach_SanPhams(SanPham entity)
+		{
+			this.SendPropertyChanging();
+			entity.HangNH = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CauHoi")]
+	public partial class CauHoi : INotifyPropertyChanging, INotifyPropertyChanged
+>>>>>>> le_chinh
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
+<<<<<<< HEAD
 		private int _MaCauTL;
 		
 		private string _TraLoi1;
@@ -3629,11 +4896,25 @@ namespace Nhom6.Models
 		private EntityRef<Admin> _Admin;
 		
 		private EntityRef<CauHoi> _CauHoi;
+=======
+		private int _MaCauHoi;
+		
+		private string _NoiDung;
+		
+		private System.Nullable<int> _MaKH;
+		
+		private System.Nullable<int> _TraLoi;
+		
+		private EntitySet<TraLoi> _TraLois;
+		
+		private EntityRef<KhachHang> _KhachHang;
+>>>>>>> le_chinh
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
+<<<<<<< HEAD
     partial void OnMaCauTLChanging(int value);
     partial void OnMaCauTLChanged();
     partial void OnTraLoi1Changing(string value);
@@ -3667,10 +4948,46 @@ namespace Nhom6.Models
 					this._MaCauTL = value;
 					this.SendPropertyChanged("MaCauTL");
 					this.OnMaCauTLChanged();
+=======
+    partial void OnMaCauHoiChanging(int value);
+    partial void OnMaCauHoiChanged();
+    partial void OnNoiDungChanging(string value);
+    partial void OnNoiDungChanged();
+    partial void OnMaKHChanging(System.Nullable<int> value);
+    partial void OnMaKHChanged();
+    partial void OnTraLoiChanging(System.Nullable<int> value);
+    partial void OnTraLoiChanged();
+    #endregion
+		
+		public CauHoi()
+		{
+			this._TraLois = new EntitySet<TraLoi>(new Action<TraLoi>(this.attach_TraLois), new Action<TraLoi>(this.detach_TraLois));
+			this._KhachHang = default(EntityRef<KhachHang>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCauHoi", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaCauHoi
+		{
+			get
+			{
+				return this._MaCauHoi;
+			}
+			set
+			{
+				if ((this._MaCauHoi != value))
+				{
+					this.OnMaCauHoiChanging(value);
+					this.SendPropertyChanging();
+					this._MaCauHoi = value;
+					this.SendPropertyChanged("MaCauHoi");
+					this.OnMaCauHoiChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="TraLoi", Storage="_TraLoi1", DbType="NVarChar(1000)")]
 		public string TraLoi1
 		{
@@ -3687,10 +5004,29 @@ namespace Nhom6.Models
 					this._TraLoi1 = value;
 					this.SendPropertyChanged("TraLoi1");
 					this.OnTraLoi1Changed();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NoiDung", DbType="NVarChar(1000)")]
+		public string NoiDung
+		{
+			get
+			{
+				return this._NoiDung;
+			}
+			set
+			{
+				if ((this._NoiDung != value))
+				{
+					this.OnNoiDungChanging(value);
+					this.SendPropertyChanging();
+					this._NoiDung = value;
+					this.SendPropertyChanged("NoiDung");
+					this.OnNoiDungChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenTK", DbType="NVarChar(50)")]
 		public string TenTK
 		{
@@ -3711,10 +5047,33 @@ namespace Nhom6.Models
 					this._TenTK = value;
 					this.SendPropertyChanged("TenTK");
 					this.OnTenTKChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="Int")]
+		public System.Nullable<int> MaKH
+		{
+			get
+			{
+				return this._MaKH;
+			}
+			set
+			{
+				if ((this._MaKH != value))
+				{
+					if (this._KhachHang.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaKHChanging(value);
+					this.SendPropertyChanging();
+					this._MaKH = value;
+					this.SendPropertyChanged("MaKH");
+					this.OnMaKHChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCauHoi", DbType="Int")]
 		public System.Nullable<int> MaCauHoi
 		{
@@ -3735,10 +5094,29 @@ namespace Nhom6.Models
 					this._MaCauHoi = value;
 					this.SendPropertyChanged("MaCauHoi");
 					this.OnMaCauHoiChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TraLoi", DbType="Int")]
+		public System.Nullable<int> TraLoi
+		{
+			get
+			{
+				return this._TraLoi;
+			}
+			set
+			{
+				if ((this._TraLoi != value))
+				{
+					this.OnTraLoiChanging(value);
+					this.SendPropertyChanging();
+					this._TraLoi = value;
+					this.SendPropertyChanged("TraLoi");
+					this.OnTraLoiChanged();
+>>>>>>> le_chinh
 				}
 			}
 		}
 		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Admin_TraLoi", Storage="_Admin", ThisKey="TenTK", OtherKey="TenTK", IsForeignKey=true)]
 		public Admin Admin
 		{
@@ -3785,10 +5163,38 @@ namespace Nhom6.Models
 				CauHoi previousValue = this._CauHoi.Entity;
 				if (((previousValue != value) 
 							|| (this._CauHoi.HasLoadedOrAssignedValue == false)))
+=======
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="CauHoi_TraLoi", Storage="_TraLois", ThisKey="MaCauHoi", OtherKey="MaCauHoi")]
+		public EntitySet<TraLoi> TraLois
+		{
+			get
+			{
+				return this._TraLois;
+			}
+			set
+			{
+				this._TraLois.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_CauHoi", Storage="_KhachHang", ThisKey="MaKH", OtherKey="MaKH", IsForeignKey=true)]
+		public KhachHang KhachHang
+		{
+			get
+			{
+				return this._KhachHang.Entity;
+			}
+			set
+			{
+				KhachHang previousValue = this._KhachHang.Entity;
+				if (((previousValue != value) 
+							|| (this._KhachHang.HasLoadedOrAssignedValue == false)))
+>>>>>>> le_chinh
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
+<<<<<<< HEAD
 						this._CauHoi.Entity = null;
 						previousValue.TraLois.Remove(this);
 					}
@@ -3803,6 +5209,22 @@ namespace Nhom6.Models
 						this._MaCauHoi = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("CauHoi");
+=======
+						this._KhachHang.Entity = null;
+						previousValue.CauHois.Remove(this);
+					}
+					this._KhachHang.Entity = value;
+					if ((value != null))
+					{
+						value.CauHois.Add(this);
+						this._MaKH = value.MaKH;
+					}
+					else
+					{
+						this._MaKH = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("KhachHang");
+>>>>>>> le_chinh
 				}
 			}
 		}
@@ -3826,6 +5248,21 @@ namespace Nhom6.Models
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
+<<<<<<< HEAD
+=======
+		
+		private void attach_TraLois(TraLoi entity)
+		{
+			this.SendPropertyChanging();
+			entity.CauHoi = this;
+		}
+		
+		private void detach_TraLois(TraLoi entity)
+		{
+			this.SendPropertyChanging();
+			entity.CauHoi = null;
+		}
+>>>>>>> le_chinh
 	}
 }
 #pragma warning restore 1591
