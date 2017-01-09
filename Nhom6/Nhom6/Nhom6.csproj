@@ -209,6 +209,14 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+<<<<<<< HEAD:Nhom6/Nhom6/Nhom6.csproj
+=======
+    <Compile Include="Models\QLNH.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNH.dbml</DependentUpon>
+    </Compile>
+>>>>>>> quang-user:Nhom6/Nhom6.csproj
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -224,6 +232,14 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+<<<<<<< HEAD:Nhom6/Nhom6/Nhom6.csproj
+=======
+    <Content Include="Models\QLNH.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QLNH.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+>>>>>>> quang-user:Nhom6/Nhom6.csproj
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -274,6 +290,18 @@
     <Content Include="Views\Shared\LayoutAdmin.cshtml" />
     <Content Include="Views\Shared\LayOutUser.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
+<<<<<<< HEAD:Nhom6/Nhom6/Nhom6.csproj
+=======
+    <Content Include="Views\TrangChu\Hang.cshtml" />
+<<<<<<< HEAD
+=======
+    <Content Include="Views\TrangChu\ChoNam.cshtml" />
+    <Content Include="Views\TrangChu\ChoNu.cshtml" />
+    <Content Include="Views\TrangChu\SpHang.cshtml" />
+    <Content Include="Views\TrangChu\chitiet.cshtml" />
+    <Content Include="Views\TrangChu\LienHe.cshtml" />
+>>>>>>> CamNhung_Rose
+>>>>>>> quang-user:Nhom6/Nhom6.csproj
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\" />
@@ -292,6 +320,17 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+<<<<<<< HEAD:Nhom6/Nhom6/Nhom6.csproj
+=======
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\QLNH.dbml.layout">
+      <DependentUpon>QLNH.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+>>>>>>> quang-user:Nhom6/Nhom6.csproj
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
