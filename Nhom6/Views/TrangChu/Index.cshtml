@@ -2,13 +2,15 @@
 @using PagedList.Mvc;
 @model PagedList.PagedList<SanPham>
 @{
-    <title>Nước Hoa Nam Nữ || Chất Lượng</title>  <!-- Tiêu đề trang chủ -->
+ <title>Nước Hoa Nam Nữ || Chất Lượng</title>  <!-- Tiêu đề trang chủ -->
     Layout = "~/Views/Shared/LayOutUser.cshtml";<!-- Layout chung -->
+
 }
 <br />
 <h3 style="margin-left: 25px;">Danh sách sản phẩm</h3>
 <br />
 <ul class="thumbnails">
+<<<<<<< HEAD
     <!-- Danh sách tất cả sản phẩm lấy từ model được return từ TrangChuController hàm Index -->
     @foreach (var item in Model)
     {
@@ -39,6 +41,3 @@
         display: inline;
     }
 </style>
-
-
-

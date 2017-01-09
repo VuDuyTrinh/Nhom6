@@ -7,6 +7,7 @@ using PagedList;
 using PagedList.Mvc;
 using Nhom6.Models;
 
+
 namespace Nhom6.Controllers
 {
     public class TrangChuController : Controller
@@ -44,5 +45,40 @@ namespace Nhom6.Controllers
             return View();
         }
       
+        public ActionResult ShowRoom()
+        {
+            return View();
+        }
+     
+        public ActionResult ChoNam(int? pape)//trang cho nam            
+        {
+            var t = from a in data.SanPhams where (a.MaLoai == 1) select a;//truy vấn sql
+            int SoSP = 9;//so sp trong 1 trang là 9
+            int SoTrang = (pape ?? 1);
+            return View(t.ToPagedList(SoTrang, SoSP));//trả về sp &trang
+
+        }
+        public ActionResult ChoNu(int? pape)//trang sp cho nữ
+        {
+            var t = from a in data.SanPhams where (a.MaLoai == 2) select a;//truy vấn lấy dữ liệu
+            int SoSP = 9;//so sp trong 1 trang la 9
+            int SoTrang = (pape ?? 1);
+            return View(t.ToPagedList(SoTrang, SoSP));
+        }
+        public ActionResult SpHang(int? page,int id)//trang sp theo hãng
+        {
+            int SoSP = 9;
+            int SoTrang = (page ?? 1);
+            var sp = from a in data.SanPhams where (a.MaHang == id) select a;//truy vấn lấy id của hãng sp mới chọn
+            var b = data.HangNHs.SingleOrDefault(n=>n.MaHang==id);
+            ViewBag.Hang = b.TenHang;//khai báo viewbag cho tên hãng
+            return View(sp.ToPagedList(SoTrang, SoSP));
+        }
+        public ActionResult chitiet(int id)
+        {
+            var ct = (from t in data.SanPhams where (t.MaNH == id) select t);//lấy id sản phẩm mới chọn để hiện chi tiết sp đó
+            return View(ct.SingleOrDefault());
+        }
+
     }
 }
