@@ -13,6 +13,7 @@ namespace Nhom6.Controllers
     {
         QLNHDataContext data = new QLNHDataContext(); // Biến data quản lý CSDL
         private List<SanPham> LaySP()
+
         {
             return data.SanPhams.ToList(); // hàm trả về list table SanPham
         }
@@ -38,5 +39,10 @@ namespace Nhom6.Controllers
             var sp = (from a in data.SanPhams select a).Skip(i).Take(4); //Lấy 4 sản phẩm để hiển thị trong carousel slide
             return PartialView(sp); //Đây là PartialView của LayoutUser
         }
+        public ActionResult LienHe()
+        {
+            return View();
+        }
+      
     }
 }
