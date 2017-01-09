@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DA_CCMT.Models
+namespace Nhom6.Models
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
