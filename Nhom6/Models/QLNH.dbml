@@ -1,18 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLWEBNUOCHOA" Class="QLNHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-<<<<<<< HEAD
-<<<<<<< HEAD
   <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-SE60GM0\SQLEXPRESS;Initial Catalog=QLWEBNUOCHOA;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWEBNUOCHOAConnectionString" Provider="System.Data.SqlClient" />
-=======
-  <Connection Mode="WebSettings" ConnectionString="Data Source=LETHANHQUANG;Initial Catalog=QLWEBNUOCHOA;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWEBNUOCHOAConnectionString1" Provider="System.Data.SqlClient" />
->>>>>>> quang-user
-=======
-<<<<<<< HEAD
-  <Connection Mode="WebSettings" ConnectionString="Data Source=LETHANHQUANG;Initial Catalog=QLWEBNUOCHOA;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWEBNUOCHOAConnectionString1" Provider="System.Data.SqlClient" />
-=======
-  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-SE60GM0\SQLEXPRESS;Initial Catalog=QLWEBNUOCHOA;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWEBNUOCHOAConnectionString" Provider="System.Data.SqlClient" />
->>>>>>> le_chinh
-=======
-  <Connection Mode="WebSettings" ConnectionString="Data Source=NVTHANH-PC\SQLEXPRESS;Initial Catalog=QLWEBNUOCHOA;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLWEBNUOCHOAConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.TraLoi" Member="TraLois">
     <Type Name="TraLoi">
       <Column Name="MaCauTL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -23,28 +10,17 @@
       <Association Name="CauHoi_TraLoi" Member="CauHoi" ThisKey="MaCauHoi" OtherKey="MaCauHoi" Type="CauHoi" IsForeignKey="true" />
     </Type>
   </Table>
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
   <Table Name="dbo.Admin" Member="Admins">
     <Type Name="Admin">
       <Column Name="TenTK" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MatKhau" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="HoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-<<<<<<< HEAD
       <Association Name="Admin_CTCN" Member="CTCNs" ThisKey="TenTK" OtherKey="TenTK" Type="CTCN" />
       <Association Name="Admin_TraLoi" Member="TraLois" ThisKey="TenTK" OtherKey="TenTK" Type="TraLoi" />
     </Type>
   </Table>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
       <Association Name="Admin_TraLoi" Member="TraLois" ThisKey="TenTK" OtherKey="TenTK" Type="TraLoi" />
       <Association Name="Admin_CTCN" Member="CTCNs" ThisKey="TenTK" OtherKey="TenTK" Type="CTCN" />
-    </Type>
-  </Table>
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
   <Table Name="dbo.CauHoi" Member="CauHois">
     <Type Name="CauHoi">
       <Column Name="MaCauHoi" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -55,15 +31,6 @@
       <Association Name="KhachHang_CauHoi" Member="KhachHang" ThisKey="MaKH" OtherKey="MaKH" Type="KhachHang" IsForeignKey="true" />
     </Type>
   </Table>
-<<<<<<< HEAD
->>>>>>> quang-user
-=======
-<<<<<<< HEAD
-=======
->>>>>>> le_chinh
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
   <Table Name="dbo.ChucNang" Member="ChucNangs">
     <Type Name="ChucNang">
       <Column Name="MaCN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -73,14 +40,6 @@
       <Association Name="ChucNang_CTCN" Member="CTCNs" ThisKey="MaCN" OtherKey="MaCN" Type="CTCN" />
     </Type>
   </Table>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
   <Table Name="dbo.CTCN" Member="CTCNs">
     <Type Name="CTCN">
       <Column Name="MaCN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -89,15 +48,6 @@
       <Association Name="ChucNang_CTCN" Member="ChucNang" ThisKey="MaCN" OtherKey="MaCN" Type="ChucNang" IsForeignKey="true" />
     </Type>
   </Table>
-<<<<<<< HEAD
-=======
->>>>>>> quang-user
-=======
-<<<<<<< HEAD
->>>>>>> le_chinh
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
   <Table Name="dbo.CTDDH" Member="CTDDHs">
     <Type Name="CTDDH">
       <Column Name="MADDH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -105,19 +55,11 @@
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="DonGia" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
       <Association Name="DonDatHang_CTDDH" Member="DonDatHang" ThisKey="MADDH" OtherKey="MADDH" Type="DonDatHang" IsForeignKey="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
       <Association Name="NH_CTDDH" Member="NH" ThisKey="MANH" OtherKey="MaNH" Type="NH" IsForeignKey="true" />
       <Association Name="SanPham_CTDDH" Member="SanPham" ThisKey="MANH" OtherKey="MaNH" Type="SanPham" IsForeignKey="true" />
     </Type>
   </Table>
-=======
-=======
-<<<<<<< HEAD
->>>>>>> merge_nhom
       <Association Name="SanPham_CTDDH" Member="SanPham" ThisKey="MANH" OtherKey="MaNH" Type="SanPham" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.CTCN" Member="CTCNs">
     <Type Name="CTCN">
       <Column Name="MaCN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -126,40 +68,17 @@
       <Association Name="ChucNang_CTCN" Member="ChucNang" ThisKey="MaCN" OtherKey="MaCN" Type="ChucNang" IsForeignKey="true" />
     </Type>
   </Table>
-<<<<<<< HEAD
->>>>>>> quang-user
-=======
-=======
       <Association Name="NH_CTDDH" Member="NH" ThisKey="MANH" OtherKey="MaNH" Type="NH" IsForeignKey="true" />
       <Association Name="SanPham_CTDDH" Member="SanPham" ThisKey="MANH" OtherKey="MaNH" Type="SanPham" IsForeignKey="true" />
-    </Type>
-  </Table>
->>>>>>> le_chinh
-=======
       <Association Name="SanPham_CTDDH" Member="SanPham" ThisKey="MANH" OtherKey="MaNH" Type="SanPham" IsForeignKey="true" />
-    </Type>
-  </Table>
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
   <Table Name="dbo.CTPN" Member="CTPNs">
     <Type Name="CTPN">
       <Column Name="MaPhieu" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaNH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="DonGia" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
       <Association Name="NH_CTPN" Member="NH" ThisKey="MaNH" OtherKey="MaNH" Type="NH" IsForeignKey="true" />
-=======
->>>>>>> quang-user
-=======
-<<<<<<< HEAD
-=======
       <Association Name="NH_CTPN" Member="NH" ThisKey="MaNH" OtherKey="MaNH" Type="NH" IsForeignKey="true" />
->>>>>>> le_chinh
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
       <Association Name="PhieuNhap_CTPN" Member="PhieuNhap" ThisKey="MaPhieu" OtherKey="MaPhieu" Type="PhieuNhap" IsForeignKey="true" />
       <Association Name="SanPham_CTPN" Member="SanPham" ThisKey="MaNH" OtherKey="MaNH" Type="SanPham" IsForeignKey="true" />
     </Type>
@@ -176,8 +95,6 @@
       <Association Name="KhachHang_DonDatHang" Member="KhachHang" ThisKey="MaKH" OtherKey="MaKH" Type="KhachHang" IsForeignKey="true" />
     </Type>
   </Table>
-<<<<<<< HEAD
-=======
   <Table Name="dbo.HangNH" Member="HangNHs">
     <Type Name="HangNH">
       <Column Name="MaHang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -196,58 +113,30 @@
       <Column Name="DiaChi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="DienThoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Email" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
       <Association Name="KhachHang_DonDatHang" Member="DonDatHangs" ThisKey="MaKH" OtherKey="MaKH" Type="DonDatHang" />
       <Association Name="KhachHang_CauHoi" Member="CauHois" ThisKey="MaKH" OtherKey="MaKH" Type="CauHoi" />
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
       <Association Name="KhachHang_CauHoi" Member="CauHois" ThisKey="MaKH" OtherKey="MaKH" Type="CauHoi" />
       <Association Name="KhachHang_DonDatHang" Member="DonDatHangs" ThisKey="MaKH" OtherKey="MaKH" Type="DonDatHang" />
     </Type>
   </Table>
-<<<<<<< HEAD
   <Table Name="dbo.HangNH" Member="HangNHs">
     <Type Name="HangNH">
       <Column Name="MaHang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="TenHang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="HangNH_SanPham" Member="SanPhams" ThisKey="MaHang" OtherKey="MaHang" Type="SanPham" />
-<<<<<<< HEAD
->>>>>>> quang-user
-=======
-=======
       <Association Name="KhachHang_DonDatHang" Member="DonDatHangs" ThisKey="MaKH" OtherKey="MaKH" Type="DonDatHang" />
       <Association Name="KhachHang_CauHoi" Member="CauHois" ThisKey="MaKH" OtherKey="MaKH" Type="CauHoi" />
->>>>>>> le_chinh
->>>>>>> merge_nhom
     </Type>
   </Table>
-=======
->>>>>>> NguyenThanh-QLDDH
   <Table Name="dbo.LoaiNH" Member="LoaiNHs">
     <Type Name="LoaiNH">
       <Column Name="MaLoai" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TenLoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="LoaiNH_NH" Member="NHs" ThisKey="MaLoai" OtherKey="MaLoai" Type="NH" />
       <Association Name="LoaiNH_SanPham" Member="SanPhams" ThisKey="MaLoai" OtherKey="MaLoai" Type="SanPham" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       <Association Name="LoaiNH_Table_1" Member="Table_1s" ThisKey="MaLoai" OtherKey="MaLoai" Type="Table_1" />
->>>>>>> quang-user
-=======
-<<<<<<< HEAD
       <Association Name="LoaiNH_Table_1" Member="Table_1s" ThisKey="MaLoai" OtherKey="MaLoai" Type="Table_1" />
-=======
->>>>>>> le_chinh
-=======
       <Association Name="LoaiNH_Table_1" Member="Table_1s" ThisKey="MaLoai" OtherKey="MaLoai" Type="Table_1" />
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
     </Type>
   </Table>
   <Table Name="dbo.NH" Member="NHs">
@@ -265,21 +154,10 @@
       <Column Name="MaLoai" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="MaHang" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
       <Association Name="NH_CTDDH" Member="CTDDHs" ThisKey="MaNH" OtherKey="MANH" Type="CTDDH" />
       <Association Name="NH_CTPN" Member="CTPNs" ThisKey="MaNH" OtherKey="MaNH" Type="CTPN" />
-=======
->>>>>>> quang-user
-=======
-<<<<<<< HEAD
-=======
       <Association Name="NH_CTDDH" Member="CTDDHs" ThisKey="MaNH" OtherKey="MANH" Type="CTDDH" />
       <Association Name="NH_CTPN" Member="CTPNs" ThisKey="MaNH" OtherKey="MaNH" Type="CTPN" />
->>>>>>> le_chinh
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
       <Association Name="LoaiNH_NH" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
     </Type>
   </Table>
@@ -290,12 +168,6 @@
       <Association Name="PhieuNhap_CTPN" Member="CTPNs" ThisKey="MaPhieu" OtherKey="MaPhieu" Type="CTPN" />
     </Type>
   </Table>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> merge_nhom
   <Table Name="dbo.TraLoi" Member="TraLois">
     <Type Name="TraLoi">
       <Column Name="MaCauTL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -306,14 +178,6 @@
       <Association Name="CauHoi_TraLoi" Member="CauHoi" ThisKey="MaCauHoi" OtherKey="MaCauHoi" Type="CauHoi" IsForeignKey="true" />
     </Type>
   </Table>
-<<<<<<< HEAD
-=======
->>>>>>> quang-user
-=======
->>>>>>> le_chinh
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
   <Table Name="dbo.SanPham" Member="SanPhams">
     <Type Name="SanPham">
       <Column Name="MaNH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -332,8 +196,6 @@
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Association Name="SanPham_CTDDH" Member="CTDDHs" ThisKey="MaNH" OtherKey="MANH" Type="CTDDH" />
       <Association Name="SanPham_CTPN" Member="CTPNs" ThisKey="MaNH" OtherKey="MaNH" Type="CTPN" />
-<<<<<<< HEAD
-<<<<<<< HEAD
       <Association Name="LoaiNH_SanPham" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
       <Association Name="HangNH_SanPham" Member="HangNH" ThisKey="MaHang" OtherKey="MaHang" Type="HangNH" IsForeignKey="true" />
     </Type>
@@ -353,12 +215,6 @@
       <Column Name="TraLoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="CauHoi_TraLoi" Member="TraLois" ThisKey="MaCauHoi" OtherKey="MaCauHoi" Type="TraLoi" />
       <Association Name="KhachHang_CauHoi" Member="KhachHang" ThisKey="MaKH" OtherKey="MaKH" Type="KhachHang" IsForeignKey="true" />
-=======
-=======
-<<<<<<< HEAD
-=======
->>>>>>> NguyenThanh-QLDDH
->>>>>>> merge_nhom
       <Association Name="HangNH_SanPham" Member="HangNH" ThisKey="MaHang" OtherKey="MaHang" Type="HangNH" IsForeignKey="true" />
       <Association Name="LoaiNH_SanPham" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
     </Type>
@@ -382,7 +238,6 @@
       <Association Name="LoaiNH_Table_1" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
     </Type>
   </Table>
-<<<<<<< HEAD
   <Table Name="dbo.TraLoi" Member="TraLois">
     <Type Name="TraLoi">
       <Column Name="MaCauTL" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -391,10 +246,6 @@
       <Column Name="MaCauHoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Admin_TraLoi" Member="Admin" ThisKey="TenTK" OtherKey="TenTK" Type="Admin" IsForeignKey="true" />
       <Association Name="CauHoi_TraLoi" Member="CauHoi" ThisKey="MaCauHoi" OtherKey="MaCauHoi" Type="CauHoi" IsForeignKey="true" />
-<<<<<<< HEAD
->>>>>>> quang-user
-=======
-=======
       <Association Name="LoaiNH_SanPham" Member="LoaiNH" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiNH" IsForeignKey="true" />
       <Association Name="HangNH_SanPham" Member="HangNH" ThisKey="MaHang" OtherKey="MaHang" Type="HangNH" IsForeignKey="true" />
     </Type>
@@ -414,10 +265,6 @@
       <Column Name="TraLoi" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="CauHoi_TraLoi" Member="TraLois" ThisKey="MaCauHoi" OtherKey="MaCauHoi" Type="TraLoi" />
       <Association Name="KhachHang_CauHoi" Member="KhachHang" ThisKey="MaKH" OtherKey="MaKH" Type="KhachHang" IsForeignKey="true" />
->>>>>>> le_chinh
->>>>>>> merge_nhom
     </Type>
   </Table>
-=======
->>>>>>> NguyenThanh-QLDDH
 </Database>
