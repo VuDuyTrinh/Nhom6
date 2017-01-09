@@ -80,6 +80,7 @@ c:\users\duy trinh\documents\visual studio 2015\Projects\Nhom6\Nhom6\bin\Microso
 c:\users\duy trinh\documents\visual studio 2015\Projects\Nhom6\Nhom6\obj\Debug\Nhom6.csprojResolveAssemblyReference.cache
 c:\users\duy trinh\documents\visual studio 2015\Projects\Nhom6\Nhom6\obj\Debug\Nhom6.dll
 c:\users\duy trinh\documents\visual studio 2015\Projects\Nhom6\Nhom6\obj\Debug\Nhom6.pdb
+<<<<<<< HEAD
 <<<<<<< HEAD:Nhom6/Nhom6/obj/Debug/Nhom6.csproj.FileListAbsolute.txt
 =======
 C:\Users\NGUYENHUYNH\Desktop\Nhom6\Nhom6\bin\ApplicationInsights.config
@@ -172,3 +173,5 @@ C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.csprojResolv
 C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.dll
 C:\Users\Administrator\Documents\GitHub\Nhom6\Nhom6\obj\Debug\Nhom6.pdb
 >>>>>>> quang-user:Nhom6/obj/Debug/Nhom6.csproj.FileListAbsolute.txt
+=======
+>>>>>>> d105a5c38dcab9637a8636bf2f1113da3e9516ec
